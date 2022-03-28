@@ -9,7 +9,7 @@ public class Atividade17 {
 
         System.out.print("Qual o tamanho, em metros quadrados, da área desejada:  ");
         double tamanhoEmMetrosQuadrados = scanner.nextDouble();
-        byte quantidadeDeLitrosPorMetros = 3;
+        byte quantidadeDeLitrosPorMetros = 6;
         byte quantidadeDeLataporTinta = 18;
         byte preçoDaLata = 80;
 
@@ -21,7 +21,8 @@ public class Atividade17 {
         int preçoDoGalao = 25;
 
         double coberturaDaTintaEmGalao = tamanhoEmMetrosQuadrados / quantidadeDeTintaporGalao;
-        double quantidadeDeGalao = coberturaDaTintaEmGalao / quantidadeDeTintaporGalao;
+        double quantidadeDeMetrosQuadradosQueUmGalaoPinta = quantidadeDeTintaporGalao * quantidadeDeLitrosPorMetros;
+        double quantidadeDeGalao = tamanhoEmMetrosQuadrados / quantidadeDeMetrosQuadradosQueUmGalaoPinta;
         double quantidadePagaPorGalao = quantidadeDeGalao * preçoDoGalao;
 
         double quantidadePagaPorLataArredondado = Math.ceil(quantidadePagaPorLata);
