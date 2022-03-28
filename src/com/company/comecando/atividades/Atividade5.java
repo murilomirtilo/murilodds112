@@ -2,13 +2,12 @@ package com.company.comecando.atividades;
 
 import java.util.Scanner;
 
-public class Ativadade6 {
+public class Atividade5 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Digite o valor de seu raio.");
+        System.out.println("Digite um valor em metros.");
         Double numero1 = scanner.nextDouble();
-        Double numero2 = 3.14*(numero1*numero1);
-        System.out.print("A área do seu circulo é:   " + numero2 );
+        System.out.print("Seu valor em centimetros é:   " + numero1 * 100);
         scanner.close();
         }
     }

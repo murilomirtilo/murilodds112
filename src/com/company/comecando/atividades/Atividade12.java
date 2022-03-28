@@ -2,7 +2,7 @@ package com.company.comecando.atividades;
 
 import java.util.Scanner;
 
-public class atividade12 {
+public class Atividade12 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Digite sua altura:   ");

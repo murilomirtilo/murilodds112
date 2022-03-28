@@ -2,7 +2,7 @@ package com.company.comecando.atividades;
 
 import java.util.Scanner;
 
-public class atividade14 {
+public class Atividade14 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Digite o peso do seu peixe");
