@@ -8,27 +8,39 @@ public class atividade15 {
 
         // SALARIO BRUTO
 
-        System.out.println("Digite o número de horas trabalhadas por mês");
-        Double numerodehorastrabalhadas = scanner.nextDouble();
+        System.out.print("Digite o número de horas trabalhadas por mês");
+        Double numeroDeHorasTrabalhadas = scanner.nextDouble();
 
-        System.out.println("Digite quanto você ganhar por hora");
-        Double numeroqueganhaporhora = scanner.nextDouble();
+        System.out.print("Digite quanto você ganhar por hora");
+        Double numeroQueGanhaPorHora = scanner.nextDouble();
 
-        Double salariobruto = (numerodehorastrabalhadas * numeroqueganhaporhora);
-        System.out.print(salariobruto);
+        Double salarioBruto = (numeroDeHorasTrabalhadas * numeroQueGanhaPorHora);
+        System.out.print(salarioBruto);
 
        // IMPOSTOS
 
-        Double impostoderenda = 0.11;
-        Double inss = 0.8;
-        Double sindicato = 0.5;
+        Double impostoDeRenda = 0.11;
+        Double inss = 0.08;
+        Double sindicato = 0.05;
+
+        // PREÇO IMPOSTOS
+
+        Double salarioBrutoImpostoDeRenda = salarioBruto * impostoDeRenda;
+        Double salarioBrutoInss = salarioBruto * inss;
+        Double salarioBrutoSindicato = salarioBruto * sindicato;
+
+        Double somaDosImpostos = salarioBrutoImpostoDeRenda + salarioBrutoInss + salarioBrutoSindicato;
 
         // SALARIO LIQUIDO
 
-        Double salariobrutoimpostoderenda = salariobruto * impostoderenda;
-        Double salariobrutoinss = salariobrutoimpostoderenda * inss;
-        Double salariobrutosindicato = salariobrutoimpostoderenda * sindicato;
+        Double salarioLiquido = salarioBruto - somaDosImpostos;
 
+        // IMPRINTS
+
+        System.out.println("Seu salario bruto é: " + salarioBruto);
+        System.out.println("O quanto você pagou para o inss é:" + salarioBrutoInss);
+        System.out.println("O quanto você pagou ao sindicato é: " + salarioBrutoSindicato);
+        System.out.println("O seu salario liquído é: " + salarioLiquido);
         scanner.close();
     }
 }
