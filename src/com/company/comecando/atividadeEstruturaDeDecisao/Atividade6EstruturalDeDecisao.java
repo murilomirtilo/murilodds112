@@ -11,7 +11,11 @@ public class Atividade6EstruturalDeDecisao {
         double numero2 = scanner.nextDouble();
         System.out.print("Informe um terceiro número:  ");
         double numero3 = scanner.nextDouble();
-        if (numero1 > numero2) && (numero1 > numero3) {
-            System.out.print("AH HAHAHAHAHAH SOCIEDADE:  ");
+        if (numero1 > numero2 && numero1 > numero3) {
+            System.out.print("O maior número é:  " + numero1);
+        } else if (numero2 > numero1 && numero2 > numero3) {
+            System.out.print("O maior número é " + numero2);
+        } else if (numero3 > numero1 && numero3 > numero2){
+            System.out.print("O maior número é " + numero3);
         }
     }}
