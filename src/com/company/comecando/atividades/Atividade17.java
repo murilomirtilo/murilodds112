@@ -33,17 +33,16 @@ public class Atividade17 {
         System.out.println("O preço pago em galão é: " + quantidadePagaPorGalaoArrendado);
         System.out.println("A quantidade de galão é: " + quantidadeDeGalao);
 
-        double misturado = quantidadePagaPorLataArredondado + quantidadePagaPorGalaoArrendado;
-        double quantidadePagaPorMistura = misturado * tamanhoEmMetrosQuadrados;
+        double misturado = coberturaDaTintaEmGalao + coberturaDaTintaEmLata;
 
-        double misturadoLata = misturado / quantidadePagaPorLataArredondado;
-        double restoDivisao = misturado % quantidadePagaPorLataArredondado;
-        double misturadoGalao = restoDivisao / quantidadePagaPorGalaoArrendado;
-
+        double misturadoLata =  coberturaDaTintaEmLata / misturado;
         double misturadoLataArredondado = Math.ceil(misturadoLata);
+        double restoDivisao = misturado % misturadoLata;
+        double misturadoGalao = restoDivisao / quantidadePagaPorGalaoArrendado;
         double misturadoGalaoArredondado = Math.ceil(misturadoGalao);
 
-        System.out.println("O preço pago misturando latas e galão é: " + misturado);
+
+
         System.out.println("A quantidade de lata usada quando se mistura os dois é: " + misturadoLataArredondado);
         System.out.println("A quantidade de galão usada quando se mistura os dois é: " + misturadoGalaoArredondado);
         scanner.close();
