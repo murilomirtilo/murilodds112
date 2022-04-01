@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Atividade8EstruturalDeDecisao {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+         Scanner scanner = new Scanner(System.in);
         System.out.print("Informe o primero produto:  ");
         double produto1 = scanner.nextDouble();
         System.out.print("Informe o segundo produto:  ");
