@@ -10,7 +10,7 @@ public class Atividade18 {
         System.out.print("Digite a velocidade da sua internet: ");
         Double velocidadeDaInternetEmMBPS = scanner.nextDouble();
         Byte ValorParaTransformar = 8;
-        Double velocidadeDeDownloadEmMB = velocidadeDaInternetEmMBPS / 8;
+        Double velocidadeDeDownloadEmMB = velocidadeDaInternetEmMBPS / ValorParaTransformar;
         Double tempoBaixadoEmSegundos = tamanhoDoArquivoEmMB / velocidadeDeDownloadEmMB;
         Byte dividirDeSegundoPraMinuto = 60;
         Double tempoBaixadoEmMinutos = tempoBaixadoEmSegundos / dividirDeSegundoPraMinuto;
