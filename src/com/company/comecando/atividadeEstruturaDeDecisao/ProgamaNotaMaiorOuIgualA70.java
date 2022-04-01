@@ -12,10 +12,6 @@ public class ProgamaNotaMaiorOuIgualA70 {
         } else {
             System.out.print("Você reprovou");
         }
-
-
-
-
    scanner.close();
     }
 }
