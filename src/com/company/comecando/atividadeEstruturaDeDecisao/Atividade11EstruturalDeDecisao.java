@@ -39,7 +39,7 @@ public class Atividade11EstruturalDeDecisao {
             System.out.println("O salário reajustado é de: "+ salarioComAumento);
         } else if (valorSalarioAntesDoAumento > 1500) {
             salarioComAumento = valorSalarioAntesDoAumento + aumentoSalario1500;
-            System.out.println("O salário antes do reajuste era: "+ valorSalarioAntesDoAumento);
+            System.out.println("O salário antes do reajuste era: " + valorSalarioAntesDoAumento);
             System.out.println("O percentual de aumento aplicado é: " + aumentoApos1500);
             System.out.println("O valor do aumento é de:  " + aumentoSalarioApos1500);
             System.out.println("O salário reajustado é de: "+ salarioComAumento);
