@@ -2,7 +2,7 @@ package com.company.comecando.atividadeEstruturaDeDecisao;
 
 import java.util.Scanner;
 
-public class Atividade2EstruturaDeDecisao {
+public class Atividade2EstruturalDeDecisao {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Digite um valor   ");
