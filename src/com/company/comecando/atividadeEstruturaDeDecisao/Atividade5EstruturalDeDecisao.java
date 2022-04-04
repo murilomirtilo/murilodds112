@@ -17,6 +17,5 @@ public class Atividade5EstruturalDeDecisao {
         } else if (media < 7) {
             System.out.print("Você foi reprovado");
         }
-
-
-    }}
+    }
+}
