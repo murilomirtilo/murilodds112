@@ -22,5 +22,4 @@ public class Atividade4EstruturalDeDecisao {
         else {
             System.out.print("Sua letra é uma consoante");
         }
-
     }}

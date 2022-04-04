@@ -7,9 +7,10 @@ public class Atividade2EstruturaDeDecisao {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Digite um valor   ");
         Double numero1 = scanner.nextDouble();
-        if (numero1 > 0) {
-            System.out.print("Número informado é positivo");
+        boolean numero1MaiorQueZero = numero1 > 0;
+        if (numero1MaiorQueZero) {
+            System.out.print("Número informado é positivo ");
         } else {
-            System.out.print("O número informado é negativo");
+            System.out.print("O número informado é  ");
         }
     }}
