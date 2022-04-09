@@ -24,4 +24,5 @@ public class Atividade15EstruturalDeDecisao {
         } else {
             System.out.print("Com os valores impostos, a forma que você informou não é um triangulo.");
         }
-    }}
+    }
+}
