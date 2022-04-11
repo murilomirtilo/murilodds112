@@ -19,23 +19,19 @@ public class Atividade21EstruturalDeDecisao {
 
         double quantidadeDeNotasDe100 = saqueDesejado / operadorArtimetico100;
         double porcentagem100 = saqueDesejado % operadorArtimetico100;
-        double notasde100 = quantidadeDeNotasDe100 - porcentagem100;
-
-        double quantidadeDeNotasDe50 = porcentagem100 / operadorAritmetico50;
-        double porcentagem50 = quantidadeDeNotasDe50 % operadorAritmetico50;
 
 
-        double quantidadeDeNotasDe10 = porcentagem50 / operadorAritmetico10;
-        double porcentagem10 = quantidadeDeNotasDe10 % operadorAritmetico10;
+        double quantidadeDeNotasde50 = porcentagem100 / operadorAritmetico50;
+        double porcetagem50 = porcentagem100 % operadorAritmetico50;
 
-
-        double quantidadeDeNotasDe5 = porcentagem10 / operadorAritmetico5;
+        double quantidadeDeNotasde10 = porcetagem50 / operadorAritmetico5;
+        double porcetagem10 = porcetagem50 % operadorAritmetico10;
 
         double quantidadeDeNotasDe1 = saqueDesejado % operadorAritmetico10;
         System.out.println("A quantidade de notas de 100 é: " + quantidadeDeNotasDe100);
-        System.out.println("A quantidade de notas de 50 é: " + quantidadeDeNotasDe50);
-        System.out.println("A quantidade de notas de 10 é: " + quantidadeDeNotasDe10);
-        System.out.println("A quantidade de notas de 5 é: " + quantidadeDeNotasDe5);
+        System.out.println("A quantidade de notas de 50 é: " + quantidadeDeNotasde50);
+        System.out.println("A quantidade de notas de 10 é: " + quantidadeDeNotasde10);
+        //System.out.println("A quantidade de notas de 5 é: " + notasde5);
         System.out.println("A quantidade de notas de 1 é: " + quantidadeDeNotasDe1);
 
 
