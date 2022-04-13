@@ -20,4 +20,5 @@ public class ProgamaUsarBooleanEqualsEExclamacao {
         Double valorDoProdutoFinal = valorDoProduto + acrescimo;
         System.out.print("O valor final do produto é: " + valorDoProdutoFinal);
         scanner.close();
-    }}
+    }
+}

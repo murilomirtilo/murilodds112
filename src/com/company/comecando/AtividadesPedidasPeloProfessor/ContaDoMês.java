@@ -17,4 +17,5 @@ public class ContaDoMês {
         double contasupermercado = scanner.nextDouble();
         double contaFinal = contadeagua + contadeescola + contadeluz + contadetelefone + contasupermercado;
         System.out.print("O valor a ser pago no final do mês é: " + contaFinal);
-    }}
+    }
+}
