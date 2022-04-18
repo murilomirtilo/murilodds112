@@ -14,4 +14,5 @@ public class PrevidenciaSocial {
         } else {
             System.out.print("Não é apto para se aposentar.");
         }
-    }}
+    }
+}
