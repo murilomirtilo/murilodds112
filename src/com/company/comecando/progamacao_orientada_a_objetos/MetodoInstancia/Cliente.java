@@ -13,6 +13,7 @@ public class Cliente {
         return nomeCompleto;
     }
 
+
     public String obterDDD() {
         String ddd = telefone.substring(0,2);
         return ddd;

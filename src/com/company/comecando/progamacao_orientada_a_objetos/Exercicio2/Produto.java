@@ -2,16 +2,17 @@ package com.company.comecando.progamacao_orientada_a_objetos.Exercicio2;
 
 public class Produto {
 
+    Integer quantidadeMinimaEstoque;
     String nome;
-
     Double precoUnitario;
-
     Integer quantidade;
 
-    public int estoque() {
-        int estoque = quantidade;
-        if (estoque > 10) {
-            System.out.print("Necessário restocar");
+    public Boolean verificarEstoque (Produto produto) {
+        if (produto.quantidade > produto.quantidadeMinimaEstoque) {
+            System.out.print("Não precisa repor estoque");
+        } else {
+            System.out.print("Precisa repor estoque");
         }
+        return null;
     }
 }
