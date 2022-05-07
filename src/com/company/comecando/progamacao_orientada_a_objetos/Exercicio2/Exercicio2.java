@@ -5,8 +5,7 @@ public class Exercicio2 {
         Produto produto = new Produto();
         produto.nome = "SmartPhone";
         produto.precoUnitario = 500.0;
-        produto.quantidade = 12;
-        produto.quantidadeMinimaEstoque = 10;
+        produto.quantidade = 11;
         produto.verificarEstoque(produto);
     }
 }

@@ -2,7 +2,7 @@ package com.company.comecando.progamacao_orientada_a_objetos.Exercicio2;
 
 public class Produto {
 
-    Integer quantidadeMinimaEstoque;
+    static int quantidadeMinimaEstoque = 10;
     String nome;
     Double precoUnitario;
     Integer quantidade;
