@@ -6,15 +6,11 @@ import java.util.Objects;
 
 public class Encapsulamento {
     public static void main(String[] args) {
-    Cliente cliente = new Cliente();
 
-    cliente.setCodigo("Sanduiche");
-    cliente.setSubtotal(100);
-    cliente.setDesconto(10);
-    cliente.setTotal(90);
-
-    public Object mostrarComanda (Cliente cliente) {
-        System.out.println("O código é: " + cliente.codigo);
-        }
+        Cliente cliente = new Cliente();
+        cliente.setCodigo("Sanduiche");
+        cliente.setSubtotal(100);
+        cliente.setDesconto(10);
+        cliente.mostrarComanda(cliente);
     }
 }
