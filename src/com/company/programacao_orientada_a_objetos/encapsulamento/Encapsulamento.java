@@ -1,16 +1,43 @@
 package com.company.programacao_orientada_a_objetos.encapsulamento;
 
 public class Encapsulamento {
+    String nome;
+    String primeiroNome;
+    String ultimoNome;
+    String telefone;
 
-    public static void main(String[] args) {
-        Cliente cliente = new Cliente();
+    public String getNome() {
+        return primeiroNome + " " + ultimoNome;
+    }
 
-        cliente.setNome("Alexandre Afonso");
-        cliente.setTelefone("27999990000");
+    public void setNome(String nome) {
+        String[] nomeCompleto = nome.split(" ");
+        primeiroNome = nomeCompleto[0];
+        ultimoNome = nomeCompleto[1];
+        //this.nome = nome;
+    }
 
-        System.out.println("Nome cliente: " + cliente.getNome());
-        System.out.println("Primeiro nome: " + cliente.getPrimeiroNome());
-        System.out.println("ÚLtimo nome: " + cliente.getUltimoNome());
+    public String getPrimeiroNome() {
+        return primeiroNome;
+    }
 
+    public void setPrimeiroNome(String primeiroNome) {
+        this.primeiroNome = primeiroNome;
+    }
+
+    public String getUltimoNome() {
+        return ultimoNome;
+    }
+
+    public void setUltimoNome(String ultimoNome) {
+        this.ultimoNome = ultimoNome;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
     }
 }

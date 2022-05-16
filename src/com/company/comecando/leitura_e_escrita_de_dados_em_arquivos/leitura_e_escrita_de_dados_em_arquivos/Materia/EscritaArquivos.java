@@ -1,4 +1,4 @@
-package com.company.comecando.leitura_e_escrita_de_dados_em_arquivos.leitura_e_escrita_de_dados_em_arquivos;
+package com.company.comecando.leitura_e_escrita_de_dados_em_arquivos.leitura_e_escrita_de_dados_em_arquivos.Materia;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
