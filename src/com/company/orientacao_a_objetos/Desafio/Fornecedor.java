@@ -8,6 +8,6 @@ public class Fornecedor {
     }
 
     public void setNome(String nome) {
-        Nome = nome;
+        this.Nome = nome;
     }
 }

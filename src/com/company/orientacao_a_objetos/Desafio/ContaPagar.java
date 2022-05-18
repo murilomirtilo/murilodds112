@@ -3,10 +3,10 @@ package com.company.orientacao_a_objetos.Desafio;
 public class ContaPagar {
     String descricao;
     Double valor;
-    String DataVencimento;
-    String fornecedor;
+    String dataVencimento;
+    Fornecedor fornecedor;
 
-    public ContaPagar(Fornecedor fornecedor, String descricao, double valor, String dataVencimento) {
+    public ContaPagar() {
     }
 
     public String getDescricao() {
@@ -26,26 +26,31 @@ public class ContaPagar {
     }
 
     public String getDataVencimento() {
-        return DataVencimento;
+        return dataVencimento;
     }
 
     public void setDataVencimento(String dataVencimento) {
-        DataVencimento = dataVencimento;
+        this.dataVencimento = dataVencimento;
     }
 
-    public String getFornecedor() {
+    public Fornecedor getFornecedor() {
         return fornecedor;
     }
 
-    public void setFornecedor(String fornecedor) {
+    public void setFornecedor(Fornecedor fornecedor) {
         this.fornecedor = fornecedor;
     }
 
-    public ContaPagar() {
+    public ContaPagar(String descricao, Double valor, String dataVencimento, Fornecedor fornecedor) {
+        this.descricao = descricao;
+        this.valor = valor;
+        this.dataVencimento = dataVencimento;
+        this.fornecedor = fornecedor;
     }
-
-    public void pagar() {
-        System.out.println("\n A conta é: " + this.fornecedor + "\n Com o valor de: " + this.valor + "\n E a data de Vencimento de: " + this.DataVencimento);
-
+    void pagar(){
+        System.out.println("Pagando conta " + this.getDescricao() +
+                        " no valor de " + this.getValor() +
+                        " no forcendor de " + this.getFornecedor().getNome()
+                );
     }
 }
