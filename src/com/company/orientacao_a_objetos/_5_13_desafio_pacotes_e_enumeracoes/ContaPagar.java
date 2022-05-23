@@ -60,20 +60,27 @@ public class ContaPagar {
     }
 
     public void cancelar() {
+        if (this.situacaoConta == CANCELADA) {
+            System.out.println("CONTA JA CANCELADA, IMPOSSIBILITADO DE CANCELAR");
+        }
+        if (this.situacaoConta == PAGA) {
+            System.out.println("CONTA JA PAGA, IMPOSSIBILITADO DE CANCELAR");
+        }
         this.situacaoConta = CANCELADA;
         System.out.println("Conta cancelada");
     }
     public void pagar() {
-        SituacaoConta situacaoConta = PENDENTE;
         if (this.situacaoConta == CANCELADA) {
             System.out.println("Não pode pagar, conta já cancelada");
+            return;
         }
         if (this.situacaoConta == PAGA) {
             System.out.println("Não pode pagar, conta já paga");
+            return;
         }
-        System.out.println("Conta paga");
+        SituacaoConta situacaoConta = PENDENTE;
+        System.out.println("Conta Paga");
         this.situacaoConta = PAGA;
+
     }
-
-
 }
