@@ -1,0 +1,23 @@
+package com.company.orientacao_a_objetos._5_13_desafio_pacotes_e_enumeracoes;
+
+import com.company.orientacao_a_objetos.Atividades.Exemplo.Desafio.Fornecedor;
+
+public class Principal {
+    public static void main(String[] args) {
+        Fornecedor imobiliaria = new Fornecedor();
+        imobiliaria.setNome("Casa & Cia Negócios Imobiliários");
+        Fornecedor mercado = new Fornecedor();
+        mercado.setNome("Mercado do João");
+        ContaPagar conta1 = new ContaPagar("Aluguel da matriz", 1230d, "10/04/2012", mercado);
+        ContaPagar conta2 = new ContaPagar("Compras do mês", 390d, "19/05/2012", mercado);
+        ContaPagar conta3 = new ContaPagar("Aluguel da filial", 700d, "11/05/2012", mercado);
+        // pagamento de conta pendente (ok, deve funcionar)
+        conta1.pagar();
+        // tentativa de pagar uma conta cancelada (não deve aceitar pagamento)
+        conta2.cancelar();
+        conta2.pagar();
+        // tentativa de pagar uma conta duas vezes (não deve aceitar na segunda vez)
+        conta3.pagar();
+        conta3.pagar();
+    }
+}
