@@ -5,7 +5,7 @@ import com.company.orientacao_a_objetos.Atividades.Exemplo.Desafio.Fornecedor;
 import static com.company.orientacao_a_objetos._5_13_desafio_pacotes_e_enumeracoes.SituacaoConta.*;
 
 public class ContaPagar {
-    static String descricao;
+    String descricao;
     Double valor;
     String dataVencimento;
     Fornecedor fornecedor;
@@ -44,7 +44,6 @@ public class ContaPagar {
         situacaoConta = PENDENTE;
     }
 
-
     SituacaoConta situacaoConta;
 
 
@@ -54,25 +53,25 @@ public class ContaPagar {
 
     public void cancelar() {
         if (this.situacaoConta == CANCELADA) {
-            System.out.println("CONTA "+ "'" + descricao + "'" + " JA CANCELADA, IMPOSSIBILITADO DE CANCELAR");
+            System.out.println("CONTA "+ "'" + getDescricao() + "'" + " JA CANCELADA, IMPOSSIBILITADO DE CANCELAR");
         }
         if (this.situacaoConta == PAGA) {
-            System.out.println("CONTA " + "'" + descricao + "'" + " JA PAGA, IMPOSSIBILITADO DE CANCELAR");
+            System.out.println("CONTA " + "'" + getDescricao() + "'" + " JA PAGA, IMPOSSIBILITADO DE CANCELAR");
         }
         this.situacaoConta = CANCELADA;
-        System.out.println("Conta " + "'" + descricao + "'" + " cancelada");
+        System.out.println("Conta " + "'" + getDescricao() + "'" + " cancelada");
     }
     public void pagar() {
         if (this.situacaoConta == CANCELADA) {
-            System.out.println("Não pode pagar " + "'" + descricao + "'" + " conta já cancelada");
+            System.out.println("Não pode pagar " + "'" + getDescricao() + "'" + " conta já cancelada");
             return;
         }
         if (this.situacaoConta == PAGA) {
-            System.out.println("Não pode pagar " + "'" + descricao + "'" + " conta já paga");
+            System.out.println("Não pode pagar " + "'" + getDescricao() + "'" + " conta já paga");
             return;
         }
         SituacaoConta situacaoConta = PENDENTE;
-        System.out.println("Conta paga " + "'" + descricao + "'");
+        System.out.println("Conta paga " + "'" + getDescricao() + "'");
         this.situacaoConta = PAGA;
 
     }
