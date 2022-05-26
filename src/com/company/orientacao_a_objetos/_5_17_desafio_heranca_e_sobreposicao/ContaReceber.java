@@ -36,13 +36,15 @@ public class ContaReceber extends Conta {
                     + this.getDescricao() + ".");            return;
         }
         if (this.situacaoConta == com.company.orientacao_a_objetos._5_13_desafio_pacotes_e_enumeracoes.SituacaoConta.PAGA) {
-            System.out.println("Não pode receber uma conta que está paga: "
+            System.out.println("Não pode pagar uma conta que já está paga: "
                     + this.getDescricao() + ".");
             return;
         }
         com.company.orientacao_a_objetos._5_13_desafio_pacotes_e_enumeracoes.SituacaoConta situacaoConta = PENDENTE;
-        System.out.println("Conta recebida " + "'" + getDescricao() + "'");
-        this.situacaoConta = com.company.orientacao_a_objetos._5_13_desafio_pacotes_e_enumeracoes.SituacaoConta.PAGA;
+        System.out.println("Pagando conta " + this.getDescricao() + " no valor de "
+                + this.getValor() + " e vencimento em " + this.getDataVencimento()
+                 + ".");        this.situacaoConta =
+                com.company.orientacao_a_objetos._5_13_desafio_pacotes_e_enumeracoes.SituacaoConta.PAGA;
 
     }
 }
