@@ -1,10 +1,11 @@
 package com.company.orientacao_a_objetos._5_13_desafio_pacotes_e_enumeracoes;
 
 import com.company.orientacao_a_objetos.Atividades.Exemplo.Desafio.Fornecedor;
+import com.company.orientacao_a_objetos._5_22_desafio_polimorfismo_e_classes_abstrata.Conta;
 
 import static com.company.orientacao_a_objetos._5_13_desafio_pacotes_e_enumeracoes.SituacaoConta.*;
 
-public class ContaPagar {
+public class ContaPagar extends Conta {
     String descricao;
     Double valor;
     String dataVencimento;
@@ -13,6 +14,12 @@ public class ContaPagar {
     public String getDescricao() {
         return descricao;
     }
+
+    @Override
+    public void exibirListagem() {
+
+    }
+
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }

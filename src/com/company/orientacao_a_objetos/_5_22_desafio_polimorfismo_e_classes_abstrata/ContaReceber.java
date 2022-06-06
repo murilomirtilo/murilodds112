@@ -1,4 +1,4 @@
-package com.company.orientacao_a_objetos._5_17_desafio_heranca_e_sobreposicao;
+package com.company.orientacao_a_objetos._5_22_desafio_polimorfismo_e_classes_abstrata;
 
 
 import static com.company.orientacao_a_objetos._5_13_desafio_pacotes_e_enumeracoes.SituacaoConta.CANCELADA;
@@ -15,6 +15,11 @@ public class ContaReceber extends Conta {
     }
 
     public ContaReceber() {
+
+    }
+
+    @Override
+    public void exibirListagem() {
 
     }
 
